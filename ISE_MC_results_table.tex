@@ -1,0 +1,103 @@
+\begin{table}[htbp]
+\caption{Comparison of the D-GM, D-NW, and D-LL methods based on the mean, median, standard deviation (SD), and interquartile range (IQR) of 100 $\smash{\widetilde{\mathrm{ISE}}}$ values, multiplied by $10^6$, for regression functions $m_1$ through $m_6$ and sample sizes $n\in \{28, 55, 105\}$. The integrals in the definition of the D-GM estimator are computed using the $\mathsf{R}$ command \texttt{adaptIntegrate} with a relative tolerance of $10^{-3}$.\label{tab:1}}
+
+\bigskip
+\renewcommand{\arraystretch}{0.82} % Adjust the value as needed
+\setlength{\tabcolsep}{10pt} % Adjust the value as needed
+\centering
+{\footnotesize
+\begin{tabular}{ccccccc}
+Target & $n$ & Method & Mean & SD & Median & IQR \\
+\toprule
+\multirow{3}{*}{$m_1$} & \multirow{3}{*}{28}
+   & D-GM & ~1884 & ~242 & ~1826 & ~332 \\
+   &    & D-NW & ~1778 & ~192 & ~1753 & ~244 \\
+   &    & D-LL & ~~397 & ~122 & ~~393 & ~168 \\
+\midrule
+\multirow{3}{*}{$m_1$} & \multirow{3}{*}{55}
+   & D-GM & ~1306 & ~188 & ~1265 & ~222 \\
+   &    & D-NW & ~1165 & ~168 & ~1155 & ~232 \\
+   &    & D-LL & ~~576 & ~119 & ~~568 & ~152 \\
+\midrule
+\multirow{3}{*}{$m_1$} & \multirow{3}{*}{105}
+   & D-GM & ~1200 & ~111 & ~1208 & ~150 \\
+   &    & D-NW & ~~955 & ~111 & ~~961 & ~153 \\
+   &    & D-LL & ~~644 & ~~89 & ~~644 & ~137 \\
+\toprule
+\multirow{3}{*}{$m_2$} & \multirow{3}{*}{28}
+   & D-GM & ~4030 & ~831 & ~3943 & 1065 \\
+   &    & D-NW & ~5659 & ~830 & ~5554 & 1240 \\
+   &    & D-LL & ~2021 & ~527 & ~1924 & ~766 \\
+\midrule
+\multirow{3}{*}{$m_2$} & \multirow{3}{*}{55}
+   & D-GM & ~3107 & ~421 & ~3113 & ~530 \\
+   &    & D-NW & ~3251 & ~477 & ~3232 & ~667 \\
+   &    & D-LL & ~1723 & ~367 & ~1765 & ~544 \\
+\midrule
+\multirow{3}{*}{$m_2$} & \multirow{3}{*}{105}
+   & D-GM & ~3164 & ~297 & ~3178 & ~432 \\
+   &    & D-NW & ~2559 & ~309 & ~2507 & ~467 \\
+   &    & D-LL & ~1766 & ~229 & ~1751 & ~323 \\
+\toprule
+\multirow{3}{*}{$m_3$} & \multirow{3}{*}{28}
+   & D-GM & ~5273 & ~610 & ~5290 & ~763 \\
+   &    & D-NW & ~4145 & ~536 & ~4129 & ~661 \\
+   &    & D-LL & ~1614 & ~510 & ~1525 & ~615 \\
+\midrule
+\multirow{3}{*}{$m_3$} & \multirow{3}{*}{55}
+   & D-GM & ~3281 & ~318 & ~3273 & ~365 \\
+   &    & D-NW & ~2418 & ~306 & ~2409 & ~418 \\
+   &    & D-LL & ~1275 & ~314 & ~1208 & ~407 \\
+\midrule
+\multirow{3}{*}{$m_3$} & \multirow{3}{*}{105}
+   & D-GM & ~3119 & ~217 & ~3107 & ~245 \\
+   &    & D-NW & ~1853 & ~243 & ~1819 & ~296 \\
+   &    & D-LL & ~1304 & ~201 & ~1267 & ~234 \\
+\toprule
+\multirow{3}{*}{$m_4$} & \multirow{3}{*}{28}
+   & D-GM & ~5644 & 1085 & ~5510 & 1487 \\
+   &    & D-NW & ~5518 & ~862 & ~5467 & 1358 \\
+   &    & D-LL & ~2468 & ~722 & ~2482 & 1065 \\
+\midrule
+\multirow{3}{*}{$m_4$} & \multirow{3}{*}{55}
+   & D-GM & ~3744 & ~521 & ~3727 & ~631 \\
+   &    & D-NW & ~3458 & ~466 & ~3463 & ~583 \\
+   &    & D-LL & ~2190 & ~413 & ~2234 & ~577 \\
+\midrule
+\multirow{3}{*}{$m_4$} & \multirow{3}{*}{105}
+   & D-GM & ~3281 & ~340 & ~3247 & ~444 \\
+   &    & D-NW & ~2713 & ~376 & ~2710 & ~545 \\
+   &    & D-LL & ~2059 & ~293 & ~2020 & ~369 \\
+\toprule
+\multirow{3}{*}{$m_5$} & \multirow{3}{*}{28}
+   & D-GM & 21132 & 3294 & 21092 & 4523 \\
+   &    & D-NW & 20072 & 2405 & 19759 & 3230 \\
+   &    & D-LL & ~6129 & 1906 & ~5964 & 2512 \\
+\midrule
+\multirow{3}{*}{$m_5$} & \multirow{3}{*}{55}
+   & D-GM & 12915 & 1643 & 12661 & 2311 \\
+   &    & D-NW & 11594 & 1566 & 11595 & 2070 \\
+   &    & D-LL & ~5914 & 1289 & ~5905 & 1601 \\
+\midrule
+\multirow{3}{*}{$m_5$} & \multirow{3}{*}{105}
+   & D-GM & 10970 & ~908 & 10929 & 1171 \\
+   &    & D-NW & ~8263 & ~913 & ~8178 & 1350 \\
+   &    & D-LL & ~5451 & ~758 & ~5403 & 1055 \\
+\toprule
+\multirow{3}{*}{$m_6$} & \multirow{3}{*}{28}
+   & D-GM & 14012 & 2070 & 13803 & 2881 \\
+   &    & D-NW & 10338 & 1510 & 10272 & 1866 \\
+   &    & D-LL & ~3538 & 1098 & ~3540 & 1375 \\
+\midrule
+\multirow{3}{*}{$m_6$} & \multirow{3}{*}{55}
+   & D-GM & ~8354 & 1052 & ~8271 & 1349 \\
+   &    & D-NW & ~5847 & ~877 & ~5833 & 1190 \\
+   &    & D-LL & ~3109 & ~691 & ~3100 & ~826 \\
+\midrule
+\multirow{3}{*}{$m_6$} & \multirow{3}{*}{105}
+   & D-GM & ~7034 & ~568 & ~7034 & ~752 \\
+   &    & D-NW & ~4525 & ~633 & ~4483 & ~856 \\
+   &    & D-LL & ~3076 & ~488 & ~3043 & ~789 \\
+\bottomrule
+\end{tabular}}
+\end{table}
